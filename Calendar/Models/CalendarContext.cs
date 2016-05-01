@@ -8,7 +8,7 @@ namespace Calendar.Models
 {
     public class CalendarContext : DbContext
     {
-        public CalendarContext() : base("SQLConnectionString")
+        public CalendarContext() : base("appointment_calendar")
         {
             Database.SetInitializer(new CreateDatabaseIfNotExists<CalendarContext>());
         }
